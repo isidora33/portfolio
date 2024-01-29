@@ -1,0 +1,50 @@
+#title {
+    @include position(flex-end, center, row);
+    width: 85%;
+    text-align: right;
+    margin: 0 auto;
+
+    #titleContent {
+        width: 60%;
+        padding: 200px 0;
+        color: $color4;
+
+        h1 {
+            font-size: 2.5em;
+
+            span {
+                color: $color1;
+            }
+        }
+
+        p {
+            padding: 20px 0px;
+            font-size: 1.2em;
+        }
+    }
+
+    .btn {
+        @extend %btn;
+
+        &-light {
+            background-color: $color4;
+            color: $color1;
+
+            &:hover {
+                background-color: $color2;
+                color: $color4;
+            }
+        }
+
+        &-dark {
+            background-color: $color1;
+            color: $color4;
+            margin-right: 5px;
+
+            &:hover {
+                background-color: $color2;
+                color: $color4;
+            }
+        }
+    }
+}

@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/coverPhoto.jpg);
+  background-attachment: fixed;
+  background-position: center bottom;
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 85%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px 0px;
+}
+nav #logo a {
+  text-decoration: none;
+}
+nav #logo a h1 {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #EDE4FF;
+}
+nav #logo a i {
+  font-size: 40px;
+  color: #6528F7;
+  margin-right: 10px;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  padding: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #D7BBF5;
+  font-size: 20px;
+}
+nav ul li a:hover {
+  color: #6528F7;
+}
+
+#title {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  width: 85%;
+  text-align: right;
+  margin: 0 auto;
+}
+#title #titleContent {
+  width: 60%;
+  padding: 200px 0;
+  color: #EDE4FF;
+}
+#title #titleContent h1 {
+  font-size: 2.5em;
+}
+#title #titleContent h1 span {
+  color: #6528F7;
+}
+#title #titleContent p {
+  padding: 20px 0px;
+  font-size: 1.2em;
+}
+#title .btn-light {
+  background-color: #EDE4FF;
+  color: #6528F7;
+}
+#title .btn-light:hover {
+  background-color: #A076F9;
+  color: #EDE4FF;
+}
+#title .btn-dark {
+  background-color: #6528F7;
+  color: #EDE4FF;
+  margin-right: 5px;
+}
+#title .btn-dark:hover {
+  background-color: #A076F9;
+  color: #EDE4FF;
+}
+
+#title .btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 10px;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
