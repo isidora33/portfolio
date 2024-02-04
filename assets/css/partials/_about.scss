@@ -1,0 +1,54 @@
+.container {
+    @include position(center, center, column);
+    background-color: $color4;
+
+    .title {
+        padding: 1.5% 0%;
+        color: $color1;
+
+    }
+
+    .wrap {
+        @include position(space-around, center, column);
+        background-color: $color3;
+        width: $width2;
+        margin-bottom: 30px;
+        padding: 1.5% 0%;
+
+        p {
+            text-align: center;
+            font-size: 1.4rem;
+            padding-bottom: 2%;
+        }
+
+        .wrap1 {
+            @include position(space-between, center, row);
+
+            .text {
+                text-align: center;
+                width: 45%;
+
+                h3 {
+                    font-size: 1.8rem;
+                    color: $color1
+                }
+
+                p {
+                    font-size: 1.6rem;
+                }
+            }
+
+            .image {
+                width: 43%;
+                border-radius: 4%;
+
+                img {
+                    width: $width1;
+                    border-radius: 4%;
+                }
+            }
+
+        }
+
+    }
+}

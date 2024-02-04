@@ -10,6 +10,7 @@ header {
   background-attachment: fixed;
   background-position: center bottom;
   background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   height: 700px;
 }
@@ -103,4 +104,56 @@ nav ul li a:hover {
   display: inline-block;
   margin-top: 10px;
   cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #EDE4FF;
+}
+.container .title {
+  padding: 1.5% 0%;
+  color: #6528F7;
+}
+.container .wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: #D7BBF5;
+  width: 80%;
+  margin-bottom: 30px;
+  padding: 1.5% 0%;
+}
+.container .wrap p {
+  text-align: center;
+  font-size: 1.4rem;
+  padding-bottom: 2%;
+}
+.container .wrap .wrap1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.container .wrap .wrap1 .text {
+  text-align: center;
+  width: 45%;
+}
+.container .wrap .wrap1 .text h3 {
+  font-size: 1.8rem;
+  color: #6528F7;
+}
+.container .wrap .wrap1 .text p {
+  font-size: 1.6rem;
+}
+.container .wrap .wrap1 .image {
+  width: 43%;
+  border-radius: 4%;
+}
+.container .wrap .wrap1 .image img {
+  width: 100%;
+  border-radius: 4%;
 }/*# sourceMappingURL=style.css.map */
