@@ -1,7 +1,421 @@
-@import "partials/variables";
 @import "partials/mixins";
-@import "partials/header";
-@import "partials/nav";
-@import "partials/title";
 @import "partials/inheritance";
-@import "partials/about"
+
+//default
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+//variables
+$color1: #6528F7;
+$color2: #A076F9;
+$color3: #D7BBF5;
+$color4: #EDE4FF;
+$white: #fff;
+$black: #000;
+$grey: #898888;
+
+$width1: 100%;
+$width2: 85%;
+
+
+//header
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/coverPhoto.jpg);
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
+
+    nav {
+        @include position;
+        width: 85%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 20px 0px;
+
+        #logo {
+            a {
+                text-decoration: none;
+
+                h1 {
+                    display: inline-block;
+                    text-transform: uppercase;
+                    font-size: 40px;
+                    color: $color4;
+                }
+
+                i {
+                    font-size: 40px;
+                    color: $color1;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+                display: inline-block;
+                padding: 10px;
+
+                a {
+                    text-decoration: none;
+                    color: $color3;
+                    font-size: 20px;
+                    transition: color 1s;
+
+                    &:hover {
+                        color: $color1;
+                    }
+                }
+            }
+        }
+    }
+
+    #title {
+        @include position(flex-end, center, row);
+        width: 85%;
+        text-align: right;
+        margin: 0 auto;
+
+        #titleContent {
+            width: 60%;
+            padding: 200px 0;
+            color: $color4;
+
+            h1 {
+                font-size: 2.5em;
+
+                span {
+                    color: $color1;
+                }
+            }
+
+            p {
+                padding: 20px 0px;
+                font-size: 1.2em;
+            }
+        }
+
+        .btn {
+            @extend %btn;
+            transition: all 0.6s;
+
+            &-light {
+                background-color: $color4;
+                color: $color1;
+
+                &:hover {
+                    background-color: $color2;
+                    color: $color4;
+                }
+            }
+
+            &-dark {
+                background-color: $color1;
+                color: $color4;
+                margin-right: 5px;
+
+                &:hover {
+                    background-color: $color2;
+                    color: $color4;
+                }
+            }
+        }
+    }
+}
+
+//sections
+.container {
+    @include position(center, center, column);
+    background-color: $color4;
+
+    .title {
+        padding: 1.5% 0%;
+        color: $color1;
+        font-size: 1.5rem;
+
+    }
+
+    .wrap {
+        @include position(center, center, column);
+        background-color: $color3;
+        width: $width2;
+        margin-bottom: 30px;
+        padding: 1.5% 0%;
+
+        p {
+            text-align: center;
+            font-size: 1.3rem;
+            padding-bottom: 2%;
+        }
+
+        .wrap1 {
+            @include position(space-between, center, row);
+
+            .text {
+                text-align: center;
+                width: 45%;
+
+                h3 {
+                    font-size: 1.8rem;
+                    color: $color1
+                }
+
+                p {
+                    font-size: 1.6rem;
+                }
+            }
+
+            .image {
+                width: 40%;
+                border-radius: 4%;
+
+                img {
+                    width: $width1;
+                    border-radius: 4%;
+                }
+            }
+
+        }
+
+    }
+
+    .wrap2 {
+        @include position(space-between, stretch, row);
+        width: $width2;
+        margin-bottom: 30px;
+
+        .item {
+
+            width: 24%;
+            background-color: $color2;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+
+            i {
+                font-size: 50px;
+                margin-bottom: 10px;
+                color: $color3;
+            }
+
+            h2 {
+                color: $color4;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .skills {
+        width: $width2;
+        background-color: $color3;
+        margin-bottom: 30px;
+        padding: 20px;
+
+
+
+        .progress {
+            background-color: $color4;
+            border-radius: 4px;
+            overflow: hidden;
+            height: 40px;
+            margin: 10px 0px;
+
+
+            .html {
+                width: 95%;
+            }
+
+            .css {
+                width: 90%;
+            }
+
+            .bootstrap {
+                width: 75%;
+            }
+
+            .js {
+                width: 70%;
+            }
+
+            .sql {
+                width: 65%;
+            }
+
+            .sass {
+                width: 85%;
+            }
+
+        }
+
+
+        .progress-bar {
+
+            background-color: $color2;
+            padding: 0px 10px;
+            transition: all 0.7s;
+        }
+
+
+        .progress-text {
+            color: $black;
+            line-height: 40px;
+            font-size: 24px;
+        }
+
+        .progress:hover .progress-bar {
+            background-color: darken($color2, 5%);
+        }
+    }
+
+    .projects {
+        @include position();
+        width: $width2;
+        margin-bottom: 30px;
+
+        .project-item {
+            width: 31%;
+
+            .project-image {
+                width: $width1;
+                margin-bottom: 8px;
+
+                img {
+                    width: $width1;
+                }
+            }
+
+            .project-text {
+                background-color: $color1;
+                color: $color4;
+                border-radius: 10px;
+                text-align: center;
+            }
+        }
+    }
+
+    .holder {
+
+        @include position(space-between, stretch, row);
+        width: 100%;
+
+
+        .form-wrap {
+            text-align: center;
+            width: 50%;
+            padding: 2% 4% 2% 8%;
+            background-color: $color2;
+        }
+
+        .contact-me {
+            width: 50%;
+            background-color: $color3;
+            padding: 5%;
+
+            .contacts {
+                width: 65%;
+                background-color: $color2;
+                margin: 4% auto;
+                padding: 4%;
+                border-radius: 30px;
+
+
+                i {
+                    margin-right: 30px;
+                    color: $color4;
+                    font-size: 20px;
+                }
+
+
+
+
+            }
+
+            .socials {
+                width: 25%;
+                margin: 0 auto;
+
+                a {
+                    font-size: 20px;
+                    color: $color1;
+
+                    .fa-facebook {
+                        margin: 8% 25%;
+                    }
+                }
+
+            }
+        }
+
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 2px solid $color3;
+            border-radius: 4px;
+            background-color: $white;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+
+        input[type="submit"] {
+            background-color: $color3;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.4s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: darken($color3, 10%);
+        }
+
+    }
+}
+
+//footer
+footer {
+    background-color: $color4;
+    width: 100%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+
+    .footer-wrap {
+        width: $width2;
+        margin: 0 auto;
+        @include position();
+
+        .links {
+            a {
+                margin-right: 10px;
+                font-size: 18px;
+                color: $color1;
+            }
+
+        }
+
+        span {
+            color: $grey;
+            font-size: 14px;
+        }
+
+    }
+}

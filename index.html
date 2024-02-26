@@ -39,12 +39,12 @@
           </a>
         </div>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About me</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about-me">About me</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <!--title section-->
@@ -57,14 +57,14 @@
             reality. Explore my portfolio and let's create something
             extraordinary together!
           </p>
-          <a href="#" class="btn btn-dark">I need a website</a>
-          <a href="#" class="btn btn-light">I'm looking to hire</a>
+          <a href="#contact" class="btn btn-dark">I need a website</a>
+          <a href="#contact" class="btn btn-light">I'm looking to hire</a>
         </div>
       </div>
     </header>
     <!--About me section-->
     <div class="container">
-      <div class="title"><h1>About me</h1></div>
+      <div id="about-me" class="title"><h1>About me</h1></div>
       <div class="wrap">
         <div id="text1">
           <p>
@@ -94,5 +94,205 @@
         </div>
       </div>
     </div>
+    <!--Services section-->
+    <div class="container">
+      <div id="services" class="title">
+        <h1>Services</h1>
+      </div>
+      <div class="wrap2">
+        <div class="item">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <h2>UI/UX design</h2>
+          <p>
+            UI/UX design involves creating intuitive interfaces (UI) and
+            optimizing user experiences (UX) for digital products, focusing on
+            aesthetics and usability to enhance user satisfaction.
+          </p>
+        </div>
+        <div class="item">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <h2>SEO optimization</h2>
+          <p>
+            SEO (Search Engine Optimization) enhances website visibility in
+            search results through keyword research, content optimization, and
+            link building, aiming to boost organic traffic and online
+            visibility.
+          </p>
+        </div>
+        <div class="item">
+          <i class="fa-solid fa-code"></i>
+          <h2>Responsive design</h2>
+          <p>
+            Responsive design ensures optimal viewing experience across devices
+            by adapting website layouts and content to different screen sizes
+            through flexible design elements and media queries.
+          </p>
+        </div>
+        <div class="item">
+          <i class="fa-solid fa-database"></i>
+          <h2>Database management</h2>
+          <p>
+            Database management organizes and maintains data efficiently,
+            ensuring accessibility, security, and integrity for supporting
+            applications and user needs.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--Skills section-->
+    <div class="container">
+      <div id="skills" class="title"><h1>Skills</h1></div>
+      <div class="skills">
+        <h3 class="skill-title">HTML</h3>
+        <div class="progress">
+          <div class="progress-bar html">
+            <p class="progress-text percentage">95%</p>
+          </div>
+        </div>
+        <h3 class="skill-title">CSS</h3>
+        <div class="progress custom-progress">
+          <div class="progress-bar css">
+            <p class="progress-text percentage">90%</p>
+          </div>
+        </div>
+        <h3 class="skill-title">Bootstrap</h3>
+        <div class="progress">
+          <div class="progress-bar bootstrap">
+            <p class="progress-text percentage">75%</p>
+          </div>
+        </div>
+        <h3 class="skill-title">JavaScript</h3>
+        <div class="progress">
+          <div class="progress-bar js">
+            <p class="progress-text percentage">70%</p>
+          </div>
+        </div>
+        <h3 class="skill-title">SQL</h3>
+        <div class="progress">
+          <div class="progress-bar sql">
+            <p class="progress-text percentage">65%</p>
+          </div>
+          <h3 class="skill-title">SASS</h3>
+          <div class="progress">
+            <div class="progress-bar sass" style="width: 20%">
+              <p class="progress-text percentage">20%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Projects section-->
+    <div class="container">
+      <div id="projects" class="title"><h1>Projects</h1></div>
+      <div class="projects">
+        <div class="project-item">
+          <div class="project-image">
+            <img src="assets/img/infinity.jpg" alt="Project 1" />
+          </div>
+          <div class="project-text">
+            <h3>Project 1</h3>
+            <p>Description of Project 1</p>
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-image">
+            <img src="assets/img/portfolio.jpg" alt="Project 2" />
+          </div>
+          <div class="project-text">
+            <h3>Project 2</h3>
+            <p>Description of Project 2</p>
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-image">
+            <img src="assets/img/coming.jpg" alt="Project 3" />
+          </div>
+          <div class="project-text">
+            <h3>Project 3</h3>
+            <p>Description of Project 3</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Contact section-->
+    <div class="container">
+      <div id="contact" class="title"><h1>Contact</h1></div>
+      <div class="holder">
+        <div class="form-wrap">
+          <form id="form1" name="form" action="index.php" method="get">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="First name"
+              required
+            />
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              placeholder="Last name"
+              required
+            />
+
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              required
+            />
+
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Your message..."
+              cols="30"
+              rows="10"
+            ></textarea>
+
+            <input type="submit" value="Submit" name="submit" id="submit" />
+          </form>
+        </div>
+        <div class="contact-me">
+          <div class="contacts">
+            <i class="fa-solid fa-phone"></i>
+            <span>+381 63 423480</span>
+          </div>
+          <div class="contacts">
+            <i class="fa-solid fa-envelope"></i>
+            <span>isidora.vuckovic.4.23@ict.edu.rs</span>
+          </div>
+          <div class="contacts">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Zdravka Čelara 16, Beograd</span>
+          </div>
+          <div class="socials">
+            <a href="https://rs.linkedin.com/" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i></a
+            ><a href="https://www.facebook.com/" target="_blank"
+              ><i class="fa-brands fa-facebook"></i></a
+            ><a href="https://www.instagram.com/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Footer-->
+    <footer>
+      <div class="footer-wrap">
+        <div class="links">
+          <a href="assets/css/style.scss"><i class="fa-brands fa-sass"></i></a
+          ><a href="assets/css/partials/_inheritance.scss"
+            ><i class="fa-brands fa-sass"></i></a
+          ><a href="assets/css/partials/_mixins.scss"
+            ><i class="fa-brands fa-sass"></i></a
+          ><a href="#"><i class="fa-brands fa-css3-alt"></i></a>
+          <a href="#"><i class="fa-solid fa-sitemap"></i></a>
+        </div>
+        <span>Isidora Vučković © 2024</span>
+      </div>
+    </footer>
   </body>
 </html>
