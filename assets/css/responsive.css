@@ -1,0 +1,82 @@
+@media screen and (max-width: 1175px) {
+  header nav #logo a h1 {
+    font-size: 36px;
+  }
+  header nav #logo a i {
+    font-size: 36px;
+  }
+
+  header #title #titleContent h1 {
+    font-size: 2.4em;
+  }
+  header #title #titleContent p {
+    padding: 18px 0px;
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  header nav #logo a h1 {
+    font-size: 30px;
+  }
+  header nav #logo a i {
+    font-size: 30px;
+  }
+  header nav ul li a {
+    font-size: 16px;
+  }
+  header #title #titleContent {
+    width: 70%;
+  }
+  header #title #titleContent {
+    padding: 30% 0;
+  }
+  header #title #titleContent h1 {
+    font-size: 2.1em;
+  }
+  header #title #titleContent p {
+    padding: 16px 0px;
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header nav #logo a h1 {
+    font-size: 28px;
+  }
+  header nav #logo a i {
+    font-size: 28px;
+  }
+  header nav ul li {
+    padding: 7px;
+  }
+  header nav ul li a {
+    font-size: 14px;
+  }
+  header #title {
+    justify-content: center;
+    text-align: center;
+  }
+  header #title #titleContent h1 {
+    font-size: 1.7em;
+  }
+  header #title #titleContent {
+    width: 95%;
+  }
+  header #title #titleContent {
+    padding: 35% 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  header nav {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  header nav {
+    flex-direction: column;
+    padding-top: 10%;
+  }
+}

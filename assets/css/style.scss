@@ -26,6 +26,7 @@ $width1: 100%;
 $width2: 85%;
 
 
+
 //header
 header {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/coverPhoto.jpg);
@@ -38,7 +39,7 @@ header {
 
     nav {
         @include position;
-        width: 85%;
+        width: $width2;
         text-align: center;
         margin: 0 auto;
         padding: 20px 0px;
@@ -85,13 +86,13 @@ header {
 
     #title {
         @include position(flex-end, center, row);
-        width: 85%;
+        width: $width2;
         text-align: right;
         margin: 0 auto;
 
         #titleContent {
             width: 60%;
-            padding: 200px 0;
+            padding: 18% 0;
             color: $color4;
 
             h1 {
