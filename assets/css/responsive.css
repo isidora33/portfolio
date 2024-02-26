@@ -1,5 +1,5 @@
 @media screen and (max-width: 1175px) {
-  header nav #logo a h1 {
+  /* header nav #logo a h1 {
     font-size: 36px;
   }
   header nav #logo a i {
@@ -12,10 +12,10 @@
   header #title #titleContent p {
     padding: 18px 0px;
     font-size: 1.1em;
-  }
+  }*/
 }
 
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1070px) {
   header nav #logo a h1 {
     font-size: 30px;
   }
