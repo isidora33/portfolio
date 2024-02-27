@@ -35,7 +35,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    //height: 700px;
+
 
     nav {
         @include position;
@@ -91,7 +91,7 @@ header {
         margin: 0 auto;
 
         #titleContent {
-            width: 60%;
+            width: 65%;
             padding: 18% 0;
             color: $color4;
 
@@ -164,6 +164,7 @@ header {
 
         .wrap1 {
             @include position(space-between, center, row);
+            flex-wrap: wrap;
 
             .text {
                 text-align: center;
@@ -195,6 +196,7 @@ header {
 
     .wrap2 {
         @include position(space-between, stretch, row);
+        flex-wrap: wrap;
         width: $width2;
         margin-bottom: 30px;
 
