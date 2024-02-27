@@ -265,50 +265,51 @@ header #title .btn-dark:hover {
 .container .projects .project-item .project-text p {
   font-size: 1.2em;
 }
-.container .holder {
+.container .contact {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
   flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
 }
-.container .holder .form-wrap {
+.container .contact .form-wrap {
   text-align: center;
   width: 50%;
   padding: 2% 4% 2% 8%;
   background-color: #A076F9;
 }
-.container .holder .contact-me {
+.container .contact .contact-me {
   width: 50%;
   background-color: #D7BBF5;
   padding: 5%;
 }
-.container .holder .contact-me .contacts {
+.container .contact .contact-me .contacts {
   width: 65%;
   background-color: #A076F9;
   margin: 4% auto;
   padding: 4%;
   border-radius: 30px;
 }
-.container .holder .contact-me .contacts i {
+.container .contact .contact-me .contacts i {
   margin-right: 30px;
   color: #EDE4FF;
   font-size: 20px;
 }
-.container .holder .contact-me .socials {
+.container .contact .contact-me .socials {
   width: 25%;
   margin: 0 auto;
 }
-.container .holder .contact-me .socials a {
+.container .contact .contact-me .socials a {
   font-size: 20px;
   color: #6528F7;
 }
-.container .holder .contact-me .socials a .fa-facebook {
+.container .contact .contact-me .socials a .fa-facebook {
   margin: 8% 25%;
 }
-.container .holder input[type=text],
-.container .holder input[type=email],
-.container .holder textarea {
+.container .contact input[type=text],
+.container .contact input[type=email],
+.container .contact textarea {
   width: 100%;
   margin-bottom: 15px;
   padding: 10px;
@@ -318,7 +319,7 @@ header #title .btn-dark:hover {
   box-sizing: border-box;
   font-size: 16px;
 }
-.container .holder input[type=submit] {
+.container .contact input[type=submit] {
   background-color: #D7BBF5;
   padding: 10px 20px;
   border: none;
@@ -327,7 +328,7 @@ header #title .btn-dark:hover {
   font-size: 16px;
   transition: background-color 0.4s ease;
 }
-.container .holder input[type=submit]:hover {
+.container .contact input[type=submit]:hover {
   background-color: #bd8fee;
 }
 

@@ -319,9 +319,10 @@ header {
         }
     }
 
-    .holder {
+    .contact {
 
         @include position(space-between, stretch, row);
+        flex-wrap: wrap;
         width: 100%;
 
 

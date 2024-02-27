@@ -120,6 +120,19 @@
   .container .services .item {
     width: 100%;
   }
+  .container .projects .project-item .project-text h3 {
+    font-size: 1.3em;
+  }
+  .container .projects .project-item .project-text p {
+    font-size: 1em;
+  }
+  .container .contact .form-wrap,
+  .container .contact .contact-me {
+    width: 100%;
+  }
+  .container .contact .form-wrap {
+    padding: 5% 10%;
+  }
 }
 
 @media screen and (max-width: 585px) {
