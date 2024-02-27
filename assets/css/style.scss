@@ -149,7 +149,7 @@ header {
 
     }
 
-    .wrap {
+    .about-me {
         @include position(center, center, column);
         background-color: $color3;
         width: $width2;
@@ -159,24 +159,24 @@ header {
         p {
             text-align: center;
             font-size: 1.3rem;
-            padding-bottom: 2%;
+            padding: 1.5% 2%;
         }
 
-        .wrap1 {
+        .about-content {
             @include position(space-between, center, row);
-            flex-wrap: wrap;
+            width: 80%;
 
             .text {
                 text-align: center;
                 width: 45%;
 
                 h3 {
-                    font-size: 1.8rem;
+                    font-size: 1.8em;
                     color: $color1
                 }
 
                 p {
-                    font-size: 1.6rem;
+                    font-size: 1.6em;
                 }
             }
 
@@ -194,7 +194,7 @@ header {
 
     }
 
-    .wrap2 {
+    .services {
         @include position(space-between, stretch, row);
         flex-wrap: wrap;
         width: $width2;
