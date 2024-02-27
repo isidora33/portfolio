@@ -196,7 +196,6 @@ header {
 
     .services {
         @include position(space-between, stretch, row);
-        flex-wrap: wrap;
         width: $width2;
         margin-bottom: 30px;
 
@@ -285,11 +284,13 @@ header {
 
     .projects {
         @include position();
+        flex-wrap: wrap;
         width: $width2;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
 
         .project-item {
-            width: 31%;
+            width: 32%;
+            margin-bottom: 2%;
 
             .project-image {
                 width: $width1;
@@ -305,6 +306,15 @@ header {
                 color: $color4;
                 border-radius: 10px;
                 text-align: center;
+                padding: 1%;
+
+                h3 {
+                    font-size: 1.5em;
+                }
+
+                p {
+                    font-size: 1.2em;
+                }
             }
         }
     }

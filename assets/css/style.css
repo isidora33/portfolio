@@ -169,7 +169,6 @@ header #title .btn-dark:hover {
   justify-content: space-between;
   align-items: stretch;
   flex-direction: row;
-  flex-wrap: wrap;
   width: 85%;
   margin-bottom: 30px;
 }
@@ -238,11 +237,13 @@ header #title .btn-dark:hover {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  flex-wrap: wrap;
   width: 85%;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .container .projects .project-item {
-  width: 31%;
+  width: 32%;
+  margin-bottom: 2%;
 }
 .container .projects .project-item .project-image {
   width: 100%;
@@ -256,6 +257,13 @@ header #title .btn-dark:hover {
   color: #EDE4FF;
   border-radius: 10px;
   text-align: center;
+  padding: 1%;
+}
+.container .projects .project-item .project-text h3 {
+  font-size: 1.5em;
+}
+.container .projects .project-item .project-text p {
+  font-size: 1.2em;
 }
 .container .holder {
   display: flex;

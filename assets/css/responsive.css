@@ -14,6 +14,13 @@
   .container .about-me .about-content .text p {
     font-size: 1.4em;
   }
+  .container .services {
+    flex-wrap: wrap;
+  }
+  .container .services .item {
+    width: 49%;
+    margin-bottom: 2%;
+  }
 }
 
 @media screen and (max-width: 965px) {
@@ -52,6 +59,9 @@
   }
   .container .about-me .about-content .text {
     width: 47%;
+  }
+  .container .projects .project-item {
+    width: 49%;
   }
 }
 
@@ -97,11 +107,18 @@
     padding: 1.2% 0%;
     font-size: 1.3rem;
   }
-  .container .about-me {
+  .container .about-me,
+  .container .skills {
     width: 95%;
   }
   .container .about-me .about-content .image {
     width: 48%;
+  }
+  .container .services {
+    margin-bottom: 0px;
+  }
+  .container .services .item {
+    width: 100%;
   }
 }
 
@@ -127,6 +144,11 @@
   header #title .btn-dark {
     margin-bottom: 20px;
   }
+  .container .about-me,
+  .container .skills {
+    width: 100%;
+    margin-bottom: 0px;
+  }
   .container .about-me .about-content {
     flex-direction: column;
   }
@@ -142,6 +164,9 @@
   }
   .container .about-me .about-content .text p {
     font-size: 1.6em;
+  }
+  .container .projects .project-item {
+    width: 100%;
   }
 }
 
@@ -170,8 +195,5 @@
   }
   .container .about-me .about-content .image {
     width: 90%;
-  }
-  .container .about-me {
-    width: 100%;
   }
 }
