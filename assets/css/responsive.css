@@ -21,6 +21,9 @@
     width: 49%;
     margin-bottom: 2%;
   }
+  .container .contact .contact-me {
+    padding: 10% 2%;
+  }
 }
 
 @media screen and (max-width: 965px) {
@@ -63,6 +66,18 @@
   .container .projects .project-item {
     width: 49%;
   }
+  .container .contact .contact-me .socials {
+    width: 20%;
+  }
+  .container .contact .contact-me .socials a .fa-facebook {
+    margin: 8% 15%;
+  }
+  .container .contact .contact-me {
+    padding: 10% 1%;
+  }
+  .container .contact .contact-me .contacts {
+    width: 75%;
+  }
 }
 
 @media screen and (max-width: 840px) {
@@ -81,6 +96,18 @@
   }
   .container .about-me .about-content {
     width: 90%;
+  }
+  .container .contact .contact-me .contacts {
+    width: 87%;
+  }
+  .container .contact .contact-me .socials {
+    width: 18%;
+  }
+  .container .contact .contact-me .socials a .fa-facebook {
+    margin: 5%;
+  }
+  .container .contact .contact-me {
+    padding: 12% 0;
   }
 }
 
@@ -132,6 +159,18 @@
   }
   .container .contact .form-wrap {
     padding: 5% 10%;
+  }
+  .container .contact .contact-me .contacts {
+    width: 70%;
+  }
+  .container .contact .contact-me .socials {
+    width: 25%;
+  }
+  .container .contact .contact-me .socials a {
+    font-size: 20px;
+  }
+  .container .contact .contact-me .socials a .fa-facebook {
+    margin: 8% 25%;
   }
 }
 
@@ -208,5 +247,17 @@
   }
   .container .about-me .about-content .image {
     width: 90%;
+  }
+  .container .contact .contact-me .contacts {
+    width: 80%;
+  }
+  .container .contact .contact-me .socials {
+    width: 20%;
+  }
+  .container .contact .contact-me .socials a .fa-facebook {
+    margin: 8% 15%;
+  }
+  .container .contact .contact-me {
+    padding: 10% 1%;
   }
 }
